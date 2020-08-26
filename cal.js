@@ -15,21 +15,21 @@ function insertNum(num) {
     }
     if (operator)decimal = false;
 }
-function insertOp(o p) {
+function insertOp(op) {
         textview.value = exp + op;
         operator =true;
         equal = false;
         allowSr = false;
 
 }
+// insert a decimal
 function insertDec() {
     if(number&& !decimal) {
         textview.value = exp + '.';
         decimal = true;
         operator = false;
 
-    }
-}
+    
 function equalTo () {
     if (exp) {
         exp = eval(exp);
